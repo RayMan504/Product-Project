@@ -1,0 +1,82 @@
+nav {
+    /*margin-left: 9px;*/
+    /*text-align: justify;*/
+    /*display: inline-block;*/
+    background: rgb(239,116,111);
+    /*padding: 10px;*/
+}
+
+nav form {
+    width: 500px;
+    margin: 100px;
+}
+
+.navbar-brand {
+    margin: 2px;
+}
+
+body {
+    background-color: rgb(255,190,64);
+    padding: 15px;
+}
+
+products {
+    padding: 10px;
+    margin: 25px;
+}
+
+img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+.row {
+    margin-bottom: 10px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    /*:hover { background-color: yellow; }*/
+}
+
+.row:hover {
+    background-color: rgb(21,237,252);    
+}
+
+.desc {
+    font-size: 20px;
+    color: white;
+}
+
+.price {
+    font-size: 20px;
+    color: green;
+}
+
+.stock {
+    font-size: 15px;
+    color: yellow;
+}
+
+.purchase {
+    width: 500px;
+}
+.btn {
+    margin: 500px;
+    
+}
+
+.modal-class {
+    width: 200px;
+    margin: 50px;
+}
+
+.form-controlC {
+    width: 400px;
+    height: 200px;
+}
+
+#form-search {
+    margin: 10px;
+}
+

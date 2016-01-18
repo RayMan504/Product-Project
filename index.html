@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="bower_components/lodash/lodash.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <script type="text/javascript" src="js/lib/spin.min.js"></script>
+    <script type="text/javascript" src="js/view/pacifier.js"></script>
+    <script type="text/javascript" src="js/products.js"></script>
+    <link rel="stylesheet" href="css/product.css" type="text/css" />
+    <title>Product Project</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <nav class="navbar">
+            <h1 class="navbar-brand">Phones R Us</h1>
+            <form id="form-search" class="navbar-form navbar-right">
+                <input type="text" placeholder="Search..." required class="form-control">
+            </form>
+            <form action="/charge" method="POST">
+              <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                data-amount="2000"
+                data-name="Phones R Us"
+                data-description="2 widgets ($20.00)"
+                data-image="img/product/thumbs/edge-gold.jpg"
+                data-locale="auto">
+              </script>
+            </form>
+                <button type="button" id="btn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                    Contact Us
+                </button>
+
+                 <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                         <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                         </div>
+                      <div class="modal-body">
+                            <form id="btn" class="modal-class">
+                              <div class="form-group">
+                                <label for="exampleInputName">Name</label>
+                                <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              </div>
+                              <div class="Comment">
+                                <label for="exampleInputComment">Comment</label>
+                                <input type="comment" class="form-controlC" id="exampleInputComment" placeholder ="Comment">
+                              </div>
+                              
+                              <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                      </div>
+                    
+                         
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+        </nav>
+        
+    </div>
+    <main class="container">
+        <ul id="product-list"> </ul>
+    </main>
+</body>
+</html>
